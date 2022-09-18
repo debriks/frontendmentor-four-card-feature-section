@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background-color: $veryLightGray;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: $fs-26;
+}
+
+.header {
+  display: block;
+  margin: 0 auto;
+  max-width: 35rem;
+  margin-top: $m-t-b-75;
+
+  &__title {
+    color: $grayishBlue;
+    font-weight: $fw-200;
+  }
+
+  &__subtitle {
+    color: $verydarkblue;
+    margin-bottom: 20px;
+  }
+
+  &__intro {
+    font-size: $fs-16;
+    text-align: center;
+    color: $grayishBlue;
+    margin-bottom: $m-t-b-75;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.7rem;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  gap: 1.7rem;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 0.625rem;
+  box-shadow: 1px 10px 20px rgb(207, 214, 224);
+  width: 20.3rem;
+  height: 15.6rem;
+  padding: 1.5rem 1.5rem;
+
+  &__title {
+    margin-top: 0;
+    font-size: 1.375rem;
+    color: $verydarkblue;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    color: $grayishBlue;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 1.7rem;
+    right: 1.7rem;
+  }
+}
+
+.supervisor {
+  border-top: $clr-border-top solid $cyan;
+}
+
+.team {
+  border-top: $clr-border-top solid $red;
+  margin-bottom: 1.7rem;
+}
+
+.karma {
+  border-top: $clr-border-top solid $orange;
+}
+
+.calculator {
+  border-top: $clr-border-top solid $blue;
+  margin-bottom: $m-t-b-75;
+}
+
+@media (min-width: 40em) and (max-width: 64em) {
+  h1,
+  h2 {
+    font-size: $fs-35;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    width: 37.5rem;
+    height: 11.25rem;
+
+    &__title {
+      font-size: 1.56rem;
+    }
+
+    &__text {
+      font-size: 1rem;
+      max-width: 21.8rem;
+    }
+  }
+}
+
+@media (min-width: 64.1rem) {
+  h1,
+  h2 {
+    font-size: $fs-35;
+  }
+
+  .header {
+    margin-top: 1.875rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card__title {
+    font-size: 1.25rem;
+  }
+
+  .calculator {
+    margin-bottom: 0px;
+  }
+}
