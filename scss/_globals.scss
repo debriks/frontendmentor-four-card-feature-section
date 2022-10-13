@@ -64,7 +64,6 @@ h2 {
   position: relative;
   background-color: white;
   gap: 1.7rem;
-  padding: 1rem;
   text-align: left;
   border-radius: 0.625rem;
   box-shadow: 1px 10px 20px rgb(207, 214, 224);
@@ -108,7 +107,7 @@ h2 {
   margin-bottom: $m-t-b-75;
 }
 
-@media (min-width: 40em) and (max-width: 64em) {
+@media (min-width: 40em) {
   h1,
   h2 {
     font-size: $fs-35;
@@ -135,7 +134,7 @@ h2 {
   }
 }
 
-@media (min-width: 64.1rem) {
+@media (min-width: 64rem) {
   h1,
   h2 {
     font-size: $fs-35;
